@@ -54,6 +54,15 @@ export const useStyles = makeStyles((theme: Theme) =>
         background: '#4399ff',
       },
     },
+    text2: {
+      fontSize: 16,
+      color: '#fff',
+      opacity: 0.6,
+      lineHeight: '26px',
+      fontWeight: 400,
+      marginBottom: 24,
+      padding: 0,
+    },
     button2: {
       background: '#2f8af5',
       padding: '16px 18px 16px 24px',
@@ -67,6 +76,26 @@ export const useStyles = makeStyles((theme: Theme) =>
       '&:hover': {
         background: '#4399ff',
       },
+    },
+    text: {
+      marginBottom: 48,
+      fontSize: 16,
+      color: '#fff',
+      opacity: 0.6,
+      fontWeight: 300,
+      '@media (max-width:1024px)': {
+        fontSize: 16,
+        fontWeight: 300,
+        lineHeight: '26px',
+      },
+    },
+    title2: {
+      fontSize: 54,
+      color: '#fff',
+      fontWeight: 900,
+      marginBottom: 24,
+      lineHeight: '64px',
+      marginTop: '40px',
     },
     icon: {
       verticalAlign: 'middle',
@@ -92,43 +121,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         fontWeight: 600,
       },
     },
-    text: {
-      marginBottom: 48,
-      fontSize: 16,
-      color: '#fff',
-      opacity: 0.6,
-      fontWeight: 300,
-      '@media (max-width:1024px)': {
-        fontSize: 16,
-        fontWeight: 300,
-        lineHeight: '26px',
-      },
-    },
-    title2: {
-      fontSize: 54,
-      color: '#fff',
-      fontWeight: 900,
-      marginBottom: 24,
-      lineHeight: '64px',
-      marginTop: '40px',
-    },
-    text2: {
-      fontSize: 16,
-      color: '#fff',
-      opacity: 0.6,
-      lineHeight: '26px',
-      fontWeight: 400,
-      marginBottom: 24,
-      padding: 0,
-    },
-    totalValue: {
-      padding: '64px 56px',
-      minHeight: 'fit-content',
-      backgroundImage:
-        'linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)',
-      border:
-        '3px solid linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1))',
-    },
     lgText: {
       fontSize: 48,
       color: '#fff',
@@ -143,6 +135,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       lineHeight: '26px',
       fontWeight: 300,
       marginBottom: 16,
+    },
+    totalValue: {
+      padding: '64px 56px',
+      minHeight: 'fit-content',
+      borderRadius: 50,
+      border: '1px solid #262626',
     },
   }),
 )

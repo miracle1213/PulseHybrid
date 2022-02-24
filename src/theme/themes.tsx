@@ -1,60 +1,32 @@
-import { createTheme, responsiveFontSizes } from '@material-ui/core'
+import { createTheme } from '@material-ui/core'
 
 var baseTheme = createTheme({
   typography: {
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-    fontSize: 14,
-  },
-})
-
-baseTheme = responsiveFontSizes(baseTheme)
-
-const darkTheme = createTheme({
-  ...baseTheme,
-  palette: {
-    type: 'dark',
-    primary: {
-      main: '#252525', //root background color
-      dark: '#212121', //input background
-      light: '#212121', //card background
-      contrastText: '#c0d3df', //disable text color
-    },
-    secondary: {
-      main: '#FFFFFF', ////text color remain color
-      dark: '#2A2B2D',
-      light: '#323232', //input border color
-    },
-    info: {
-      main: '#3498db', //button background
-      dark: '#2c80b4', //link text mouse hover color
-      light: '#323232', //input and textarea border color
-    },
-    text: {
-      primary: '#e5ecf3', //header title text color
-      secondary: '#252525', //table search box hover color
-      disabled: '#c0d3df', //button disable color
-      hint: '#e5ecf3', //table text color
-    },
-  },
-  typography: {
+    fontFamily: ['roboto'].join(','),
     body1: {
-      color: '#c0d3df',   //text color contrast strong
-      fontSize: '14px',
+      fontSize: '12px',
+      fontWeight: 500,
     },
     body2: {
-      color: '#c0d3df',
       fontSize: '14px',
+      fontWeight: 500,
+    },
+    subtitle1: {
+      fontSize: '20px',
+      fontWeight: 500,
+    },
+    subtitle2: {
+      fontSize: '16px',
+      fontWeight: 500,
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 767,
+      md: 1023,
+      lg: 1280,
+      xl: 1920,
     },
   },
 })
@@ -63,37 +35,114 @@ const lightTheme = createTheme({
   ...baseTheme,
   palette: {
     type: 'light',
+    background: {
+      default: '#252930', //trade view container's background
+      paper: '#181A20', //header background
+    },
     primary: {
-      main: '#FFFFFF',
-      dark: '#F8FAFD',
-      light: '#FFFFFF',
-      contrastText: '#6c757e',
+      main: '#161A1E', //trade view component's background
+      dark: '#1e2329', // modal background
+      light: '#1e2329', //dropdown background
+      contrastText: '#e5ecf3',
     },
+    //trade view font color
     secondary: {
-      main: '#252525',
-      dark: '#F1F2F4',
-      light: '#e7eaf3',
+      main: '#848e9c', //gery color
+      dark: '#eaecef', //white color
+      light: '#f0b90b', //hover color
+      contrastText: '#2b3139',
     },
+    //status change color
     info: {
-      main: '#3498db',
-      dark: '#2c80b4',
-      light: '#03a9f4',
+      main: '#03a66d', //green
+      dark: '#f6465d', //red
+      light: '#1e2026', //orderform background
     },
+    //status change progressbar color
+    success: {
+      main: '#0ecb81', //green
+      dark: '#f6465d', //red
+      light: '#2a2d35', //order form input div
+    },
+    error: {
+      main: '#2b313a', //border
+      dark: '#252930', //table border
+      light: '#161a1e', //scrollbar color
+      contrastText: '#2A2D35', //scroll thumb
+    },
+    // header font color & trade view statistic main color// header font color
     text: {
-      primary: '#4a4f55',
-      secondary: '#F8FAFD',
-      disabled: '#77838f',
-      hint: '#12161c',
+      primary: '#848e9c', //gery color
+      secondary: '#eaecef', //white color
+      hint: '#b7bdc6', //statistic main color
+      disabled: '#f0b90b', //header menu hover and active of font color & font color of Log In, Rigerster Now
+    },
+    common: {
+      black: '#181a20', //login background
+      white: '#474d57', //input side border
+    },
+    warning: {
+      main: '#3C2601', //login notification background
+      dark: '#2b3139',
+      contrastText: '#fff',
     },
   },
-  typography: {
-    body1: {
-      color: '#12161c',
-      fontSize: '14px',
+})
+
+const darkTheme = createTheme({
+  ...baseTheme,
+  palette: {
+    type: 'dark',
+    background: {
+      default: '#eef0f2', //trade view container's background
+      paper: '#161A1E', //header background
     },
-    body2: {
-      color: '#1e2022',
-      fontSize: '14px',
+    warning: {
+      main: '#fef6d8', //login notification background
+      contrastText: '#000',
+      dark: '#f5f5f5',
+    },
+    primary: {
+      main: '#FAFAFA', //trade view component's background
+      dark: '#FFFFFF', //modal background
+      light: '#1e2329', //dropdown background
+      contrastText: '#4a4f55',
+    },
+    //trade view font color
+    secondary: {
+      main: '#707a8a', //gery color
+      dark: '#1e2329', //white color
+      light: '#c99400', //hover color
+      contrastText: '#f5f5f7',
+    },
+    error: {
+      main: '#fafafa', //border
+      dark: '#cccfd5', //table border
+      light: '#fff', //scrollbar color
+      contrastText: '#eaecef', //scroll thumb
+    },
+    common: {
+      black: '#fff', //login background
+      white: '#eaecef', //input side border
+    },
+    //status change color
+    info: {
+      main: '#03a66d', //green
+      dark: '#cf304a', //red
+      light: '#fff', //orderform background
+    },
+    //status change progressbar color
+    success: {
+      main: '#0ecb81', //green
+      dark: '#f6465d', //red
+      light: '#f0f1f2', //order form input div
+    },
+    // header font color & trade view statistic main color
+    text: {
+      primary: '#848e9c', //gery color
+      secondary: '#eaecef', //white color
+      hint: '#474d57', //statistic main color
+      disabled: '#f0b90b', //header menu hover font color & Log In, Rigerster Now's fixed Color
     },
   },
 })

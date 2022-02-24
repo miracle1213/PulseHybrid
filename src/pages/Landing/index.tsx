@@ -17,7 +17,7 @@ function Landing() {
         <Toolbar>
           <div className={classes.appBar}>
             <img src={Logo} className={classes.logo} alt="logo" />
-            <Link to="/" className={classes.button}>
+            <Link to="/register" className={classes.button}>
               Launch dApp <KeyboardArrowRightIcon className={classes.icon} />
             </Link>
           </div>
@@ -50,31 +50,29 @@ function Landing() {
             PLS tokens.
           </Grid>
         </Grid>
-
         <Grid container spacing={2} className={classes.totalValue}>
           <Grid item xs={3}>
-            <Grid item className={classes.lgText}>
-              $53.7M+
-            </Grid>
-            <Grid item className={classes.smText}>
-              Total liquidity
-            </Grid>
+            <Typography className={classes.lgText}>$53.7M+</Typography>
+            <Typography className={classes.smText}>Total liquidity</Typography>
           </Grid>
           <Grid item xs={3}>
-            <div className={classes.lgText}>$6.9B+</div>
-            <div className={classes.smText}>Total trading volume</div>
+            <Typography className={classes.lgText}>$6.9B+</Typography>
+            <Typography className={classes.smText}>
+              Total trading volume
+            </Typography>
           </Grid>
           <Grid item xs={3}>
-            <div className={classes.lgText}>$28M+</div>
-            <div className={classes.smText}>Total LP earning</div>
+            <Typography className={classes.lgText}>$28M+</Typography>
+            <Typography className={classes.smText}>Total LP earning</Typography>
           </Grid>
           <Grid item xs={3}>
-            <div className={classes.lgText}>$89.9M+</div>
-            <div className={classes.smText}>
+            <Typography className={classes.lgText}>$89.9M+</Typography>
+            <Typography className={classes.smText}>
               Pulse distributed via liquidity mining programs
-            </div>
+            </Typography>
           </Grid>
-        </Grid>kl[]
+        </Grid>
+        kl[]
       </div>
     </div>
   )
