@@ -101,7 +101,7 @@ function EmailVerify() {
         </div>
       </div>
       <Box className={classes.footer}>
-        © 2021 dongletrade.com. All rights reserved
+        © 2021 pulseswap.com. All rights reserved
       </Box>
     </>
   )

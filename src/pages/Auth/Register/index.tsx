@@ -53,7 +53,7 @@ function Register() {
           <div className={classes.registerFormContainer}>
             <div>
               <Typography className={clsx(classes.fontColor1, classes.h4)}>
-                Create DONGLE Account
+                Create Pulse Account
               </Typography>
               <Typography variant="body2" className={classes.fontColor2}>
                 Register with your email or mobile
@@ -96,7 +96,7 @@ function Register() {
             )}
           </div>
           <div className={classes.footer1}>
-            <span>© 2021 dongletrade.com. All rights reserved</span>
+            <span>© 2021 pulseswap.com. All rights reserved</span>
           </div>
         </div>
         {alert === undefined ? (

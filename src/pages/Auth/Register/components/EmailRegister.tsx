@@ -453,7 +453,7 @@ function EmailForm() {
                   defaultChecked
                 />
               }
-              label="I have read and agree to DONGLE’s"
+              label="I have read and agree to Pulse"
               className={classes.fontColor2}
             />
             <Typography className={classes.termlink}>
@@ -463,7 +463,7 @@ function EmailForm() {
           <div className={classes.text4}>
             <Typography className={classes.error}>
               {serviceCheck === false
-                ? "I am over 18 age, and I agree to DONGLE's Terms"
+                ? "I am over 18 age, and I agree to Pulse's Terms"
                 : ''}
             </Typography>
           </div>

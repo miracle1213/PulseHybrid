@@ -26,14 +26,14 @@ export const useStyles = makeStyles((theme: Theme) =>
       },
     },
     root: {
-      background: theme.palette.common.black,
+      background: '#06070a',
       height: '100vh',
       '@media (max-height:900px)': {
         height: '100vh',
       },
     },
     root2: {
-      background: theme.palette.common.black,
+      background: '#06070a',
       height: '100vh',
       '@media (max-height:900px)': {
         height: '100vh',

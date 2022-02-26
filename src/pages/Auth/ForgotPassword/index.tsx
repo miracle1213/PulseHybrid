@@ -71,7 +71,7 @@ function Forgot() {
           </div>
         </div>
         <Box className={classes.footer2}>
-          © 2021 dongletrade.com. All rights reserved
+          © 2021 pulseswap.com. All rights reserved
         </Box>
       </div>
     </>

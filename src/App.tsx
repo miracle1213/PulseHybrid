@@ -20,6 +20,8 @@ import Login from './pages/Auth/Login'
 import SecurityVerification from './pages/Auth/SecurityVerification'
 
 import Landing from './pages/Landing'
+import Layouts from './layouts'
+import BuySell from './pages/BuySell'
 
 function App() {
   return (
@@ -64,6 +66,7 @@ function App() {
         />
         <Route exact path="/confirm-new-device" component={ConfirmDevice} />
         <Route exact path="/complete-password" component={CompletePassword} />
+        <Route exact path="/main" component={Layouts} />
       </Switch>
     </Router>
   )

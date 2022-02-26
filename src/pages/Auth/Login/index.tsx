@@ -40,13 +40,13 @@ function Login() {
         <img src={lockIcon} style={{ verticalAlign: 'text-top' }} alt="icon" />
         <span className={classes.notiText}>
           URL verification: <span style={{ color: '#0ECB81' }}>https</span>
-          ://accounts.dongle.com
+          ://accounts.Pulse.com
         </span>
       </div> */}
         <div className={classes.container}>
           <div>
             <Typography className={clsx(classes.fontColor1, classes.h2)}>
-              Dongle Account Login
+              Pulse Account Login
             </Typography>
             <Typography
               variant="body2"
@@ -86,7 +86,7 @@ function Login() {
           </div>
         </div>
         <Box className={classes.footer}>
-          © 2021 dongletrade.com. All rights reserved
+          © 2021 Pulsetrade.com. All rights reserved
         </Box>
       </div>
     </>

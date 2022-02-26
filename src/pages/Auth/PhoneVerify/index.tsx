@@ -148,7 +148,7 @@ function PhoneVerify(props: any) {
         />
 
         <Box className={classes.footer3}>
-          © 2021 dongletrade.com. All rights reserved
+          © 2021 pulseswap.com. All rights reserved
         </Box>
       </div>
     </>

@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       margin: 0,
       minWidth: 0,
       width: '100%',
-      height: '100vh',
+      height: '150vh',
       background: '#06070a',
       backgroundImage: 'url(' + TopBackground + ')',
       backgroundRepeat: 'no-repeat',

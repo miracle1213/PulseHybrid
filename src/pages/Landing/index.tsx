@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { AppBar, Toolbar, Grid, Typography } from '@material-ui/core'
-import { useStyles } from './style'
+import { useStyles } from './Style'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
 import HeadImage from '../../assets/prefooterimg.png'
 
@@ -72,7 +72,6 @@ function Landing() {
             </Typography>
           </Grid>
         </Grid>
-        kl[]
       </div>
     </div>
   )
